@@ -8,11 +8,8 @@
   - Yarn (for JavaScript package management)
 
  ⚙️ Configuration
-1. Clone the repository** and navigate to the project directory:
-  
-   git clone <repo-url>
-   cd <project-directory>
-   
+1. Clone the repository** and navigate to the project directory
+ 
 2. Install dependencies**:
 
    bundle install
