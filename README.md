@@ -1,7 +1,7 @@
 ---
 
  🚀 Prerequisites and Installation
-* 💎 Ruby version**: Ensure Ruby 3.0 or later is installed to run Rails 7 smoothly.
+* 💎 Ruby version: Ensure Ruby 3.0 or later is installed to run Rails 7 smoothly.
 * 🛠️ System dependencies**:
   - Rails 7
   - Node.js (for asset compilation)
@@ -18,7 +18,7 @@
    bundle install
    yarn install
 
-3. Environment Variables**: Configure environment variables in .env for database connections, API keys, etc.
+3. Environment Variables: Configure environment variables in .env for database connections, API keys, etc.
 
  🗄️ Database Setup
 * Database creation:
@@ -39,7 +39,7 @@
 
    rails server
  
-2. Open your browser and go to `http://localhost:3000` to view the application 🎉.
+2. Open your browser and go to http://localhost:3000 to view the application 🎉.
 
  🧪 Testing
 * Run the test suite**:
