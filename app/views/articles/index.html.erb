@@ -1,4 +1,6 @@
-<h1>Articles listing page</h1>
+<h1>Articles Listing Page</h1>
+
+<%= link_to "Create New Article", new_article_path, class: "button" %>
 
 <table>
     <thead>
@@ -10,12 +12,54 @@
     </thead>
 
     <tbody>
-        <% @Articles.each do |article|%>
+        <% @articles.each do |article| %>
             <tr>
-                <td> <%= article.title%> </td>
-                <td> <%= article.description%> </td>
-                <td> Placeholder </td>
-                <% end %>
+                <td><%= article.title %></td>
+                <td><%= article.description %></td>
+                <td>
+                    <%= link_to "Display", article_path(article) %>
+                    <%= link_to "Edit", edit_article_path(article) %>
+                    <%= button_to "Delete", article_path(article), data: { turbo_confirm: "Are you sure?" }, method: :delete %>
+                </td>
             </tr>
+        <% end %>
     </tbody>
 </table>
+
+<style>
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #4A90E2;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #357ABD;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+thead {
+    background-color: #f4f4f9;
+}
+
+th, td {
+    text-align: left;
+}
+
+</style>
